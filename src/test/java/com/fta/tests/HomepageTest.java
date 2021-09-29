@@ -2,8 +2,8 @@ package com.fta.tests;
 
 import org.testng.annotations.Test;
 
-import com.fta.driver.Driver;
 import com.fta.driver.DriverManager;
+import com.fta.utils.ReadProperty;
 
 public final class HomepageTest extends BaseTest{
 	
@@ -11,19 +11,19 @@ public final class HomepageTest extends BaseTest{
 	@Test
 	public void test1()
 	{
-		DriverManager.getDriver().get("https://www.bewakoof.com/");
+		DriverManager.getDriver().get(ReadProperty.get("url"));
 	}
-	@Test
-	public void test2()
-	{
-		DriverManager.getDriver().get("https://www.google.com/");
-	}
-
-	@Test
-	public void test3()
-	{
-		DriverManager.getDriver().get("https://www.facebook.com/");
-	}
+//	@Test
+//	public void test2()
+//	{
+//		DriverManager.getDriver().get("https://www.google.com/");
+//	}
+//
+//	@Test
+//	public void test3()
+//	{
+//		DriverManager.getDriver().get("https://www.facebook.com/");
+//	}
 
 
 }
