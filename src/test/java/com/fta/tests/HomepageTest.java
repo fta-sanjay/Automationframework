@@ -9,7 +9,7 @@ public final class HomepageTest extends BaseTest{
 	
 	private HomepageTest() {}
 	@Test
-	public void test1()
+	public void test1() 
 	{
 		DriverManager.getDriver().get(ReadProperty.get("url"));
 	}
