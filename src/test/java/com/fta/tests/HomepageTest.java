@@ -11,7 +11,7 @@ public final class HomepageTest extends BaseTest{
 	@Test
 	public void test1() 
 	{
-		DriverManager.getDriver().get(ReadProperty.get("url"));
+		DriverManager.getDriver().get(ReadProperty.getvalueusinghashmap("url"));
 	}
 //	@Test
 //	public void test2()
