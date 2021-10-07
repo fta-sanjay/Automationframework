@@ -5,6 +5,8 @@
     <classes>
       <class name="com.fta.tests.HomepageTest">
         <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
           <include name="test1"/>
         </methods>
       </class> <!-- com.fta.tests.HomepageTest -->
