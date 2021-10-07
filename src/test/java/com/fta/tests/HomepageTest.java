@@ -17,7 +17,7 @@ public final class HomepageTest extends BaseTest{
 	@Test
 	public void test1() 
 	{
-		DriverManager.getDriver().get(ReadProperty.getvalueusinghashmap("url"));
+		
 		String title=DriverManager.getDriver().getTitle();
 		Assert.assertTrue(Objects.nonNull(title));
 		Assert.assertTrue(title.toLowerCase().contains("bewakoof"));

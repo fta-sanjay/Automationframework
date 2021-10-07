@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="com.fta.tests.HomepageTest">
+      <class name="com.fta.tests.LoginpageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="test3"/>
+          <include name="loginLogoutTest"/>
         </methods>
-      </class> <!-- com.fta.tests.HomepageTest -->
+      </class> <!-- com.fta.tests.LoginpageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
