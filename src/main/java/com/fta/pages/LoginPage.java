@@ -1,6 +1,8 @@
 package com.fta.pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 
 import com.fta.driver.DriverManager;
 
@@ -11,9 +13,12 @@ public final class LoginPage {
 	private final By email_textbox=By.xpath("//input[@id='email_input']");
 	private final By password_textbox=By.xpath("//input[@id='mob_password']");
 	private final By login_button=By.xpath("//button[@id='mob_login_password_submit']");
-
+	private final By account_button=By.xpath("//*[@id='testHeaderAcc']");
+	private final By accountname_link=By.xpath("//*[@class='myAccountMenu']/li/a");
 	
-	public void Login(String username,String password)
+	
+	private final Actions action=new Actions(DriverManager.getDriver());
+	public String Login(String username,String password)
 	{
 		DriverManager.getDriver().findElement(login_link).click();
 		DriverManager.getDriver().findElement(email_button).click();
@@ -39,6 +44,12 @@ public final class LoginPage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+//		Alert alert=DriverManager.getDriver().switchTo().alert();
+//		alert.accept();
+	//	action.moveToElement(DriverManager.getDriver().findElement(account_button));
+		DriverManager.getDriver().findElement(account_button).click();
+		return DriverManager.getDriver().findElement(accountname_link).getText();
+		
 		
 	}
 
