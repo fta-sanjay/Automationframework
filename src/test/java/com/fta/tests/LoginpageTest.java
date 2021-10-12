@@ -13,8 +13,12 @@ public final class LoginpageTest extends BaseTest{
 	public void loginLogoutTest()
 	{
 		LoginPage loginpage=new LoginPage();
-		String accountname=loginpage.Login("sanjaysinghjsg@gmail.com", "Evry@2021");
-		Assert.assertEquals(accountname, "Hi, sanjay", "Login has not done completly");
+		String title=loginpage.Login("sanjaysinghjsg@gmail.com", "Evry@2021").logout().getTitle();
+		System.out.println(title);
+		Assert.assertEquals(title, "Online Shopping for Men, Women Clothing & Accessories at Bewakoof");
+		
+		
+		//	Assert.assertEquals(accountname, "Hi, sanjay", "Login has not done completly");
 		
 	}
 
