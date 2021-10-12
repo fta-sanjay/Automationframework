@@ -4,7 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 
-import com.fta.driver.DriverManager;
 import com.google.common.util.concurrent.Uninterruptibles;
 
 public final class LoginPage extends BasePage{
