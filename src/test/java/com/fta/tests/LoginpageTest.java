@@ -1,5 +1,6 @@
 package com.fta.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.fta.pages.LoginPage;
@@ -12,7 +13,9 @@ public final class LoginpageTest extends BaseTest{
 	public void loginLogoutTest()
 	{
 		LoginPage loginpage=new LoginPage();
-		loginpage.Login("sanjaysinghjsg@gmail.com", "Evry@2021");
+		String accountname=loginpage.Login("sanjaysinghjsg@gmail.com", "Evry@2021");
+		Assert.assertEquals(accountname, "Hi, sanjay", "Login has not done completly");
+		
 	}
 
 }
