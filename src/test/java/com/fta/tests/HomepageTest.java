@@ -6,7 +6,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.fta.driver.DriverManager;
-import com.fta.utils.ReadProperty;
 
 public final class HomepageTest extends BaseTest{
 	
