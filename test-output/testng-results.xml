@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="16183" started-at="2021-10-12T18:23:15Z" finished-at="2021-10-12T18:23:32Z">
+  <suite name="Suite" duration-ms="16294" started-at="2021-10-14T18:23:18Z" finished-at="2021-10-14T18:23:35Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="16183" started-at="2021-10-12T18:23:15Z" finished-at="2021-10-12T18:23:32Z">
+    <test name="Test" duration-ms="16294" started-at="2021-10-14T18:23:18Z" finished-at="2021-10-14T18:23:35Z">
       <class name="com.fta.tests.LoginpageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.fta.tests.LoginpageTest@4278a03f]" name="setup" is-config="true" duration-ms="5413" started-at="2021-10-12T23:53:15Z" finished-at="2021-10-12T23:53:21Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.fta.tests.LoginpageTest@4278a03f]" name="setup" is-config="true" duration-ms="5320" started-at="2021-10-14T23:53:18Z" finished-at="2021-10-14T23:53:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginLogoutTest()[pri:0, instance:com.fta.tests.LoginpageTest@4278a03f]" name="loginLogoutTest" duration-ms="10129" started-at="2021-10-12T23:53:21Z" finished-at="2021-10-12T23:53:31Z">
+        <test-method status="PASS" signature="loginLogoutTest()[pri:0, instance:com.fta.tests.LoginpageTest@4278a03f]" name="loginLogoutTest" duration-ms="10345" started-at="2021-10-14T23:53:24Z" finished-at="2021-10-14T23:53:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogoutTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fta.tests.LoginpageTest@4278a03f]" name="tearDown" is-config="true" duration-ms="614" started-at="2021-10-12T23:53:31Z" finished-at="2021-10-12T23:53:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.fta.tests.LoginpageTest@4278a03f]" name="tearDown" is-config="true" duration-ms="598" started-at="2021-10-14T23:53:34Z" finished-at="2021-10-14T23:53:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
