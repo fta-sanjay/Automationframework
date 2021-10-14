@@ -3,6 +3,7 @@ package com.fta.pages;
 import org.openqa.selenium.By;
 
 import com.fta.driver.DriverManager;
+import com.fta.enums.WaitStrategy;
 
 public final class HomePage extends BasePage{
 
@@ -13,8 +14,8 @@ public final class HomePage extends BasePage{
 
 	public HomePage logout()
 	{
-		click(buttonAccount);
-		click(buttonLogout);
+		click(buttonAccount,WaitStrategy.PRESENCE);
+		click(buttonLogout,WaitStrategy.PRESENCE);
 		return this;
 	}
 	public String getTitle()

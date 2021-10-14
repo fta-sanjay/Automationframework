@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 
+import com.fta.enums.WaitStrategy;
 import com.google.common.util.concurrent.Uninterruptibles;
 
 public final class LoginPage extends BasePage{
@@ -20,8 +21,8 @@ public final class LoginPage extends BasePage{
 	
 	public HomePage Login(String username,String password)
 	{
-		click(linkLogin);
-		click(buttonEmail);
+		click(linkLogin,WaitStrategy.PRESENCE);
+		click(buttonEmail,WaitStrategy.PRESENCE);
 		sendKeys(textboxEmail, username);
 		
 		Uninterruptibles.sleepUninterruptibly(3,TimeUnit.SECONDS);
@@ -29,11 +30,11 @@ public final class LoginPage extends BasePage{
 		sendKeys(textboxPassword, password);
 		
 		Uninterruptibles.sleepUninterruptibly(3,TimeUnit.SECONDS);
-		click(buttonLogin);
+		click(buttonLogin,WaitStrategy.PRESENCE);
 
 		Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
 		
-		click(buttonAccount);
+		click(buttonAccount,WaitStrategy.PRESENCE);
 		
 	//	return DriverManager.getDriver().findElement(accountname_link).getText();
 		return new HomePage();
