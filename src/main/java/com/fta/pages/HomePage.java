@@ -37,6 +37,7 @@ public final class HomePage extends BasePage{
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+		
 		new Actions(DriverManager.getDriver()).moveToElement(DriverManager.getDriver().findElement(linkMenu));
 		List<WebElement> elements=DriverManager.getDriver().findElements(By.xpath("//a[text()='Topwear' and @href='/top-wear-for-men']/following-sibling::a"));
 		for(WebElement e:elements)

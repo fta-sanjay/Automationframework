@@ -16,7 +16,9 @@ public final class HomepageTest extends BaseTest{
 	//title verification
 	@Test
 	public void test1() 
+	
 	{
+		
 		HomePage homepage=new HomePage();
 		homepage.getProductPage();
 		
