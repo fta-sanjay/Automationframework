@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.fta.driver.DriverManager;
+import com.fta.pages.HomePage;
 
 public final class HomepageTest extends BaseTest{
 	
@@ -15,13 +16,17 @@ public final class HomepageTest extends BaseTest{
 	//title verification
 	@Test
 	public void test1() 
+	
 	{
 		
-		String title=DriverManager.getDriver().getTitle();
-		Assert.assertTrue(Objects.nonNull(title));
-		Assert.assertTrue(title.toLowerCase().contains("bewakoof"));
+		HomePage homepage=new HomePage();
+		homepage.getProductPage();
 		
-		Assert.assertEquals(title, "Online Shopping for Men, Women Clothing & Accessories at Bewakoof");
+//		String title=DriverManager.getDriver().getTitle();
+//		Assert.assertTrue(Objects.nonNull(title));
+//		Assert.assertTrue(title.toLowerCase().contains("bewakoof"));
+//		
+//		Assert.assertEquals(title, "Online Shopping for Men, Women Clothing & Accessories at Bewakoof");
 	}
 
 
