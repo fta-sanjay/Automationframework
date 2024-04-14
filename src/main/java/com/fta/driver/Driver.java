@@ -2,6 +2,7 @@ package com.fta.driver;
 
 import java.util.Objects;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,7 +16,8 @@ public final class Driver {
 	{
 		if(Objects.isNull(DriverManager.getDriver()))
 		{
-			System.setProperty("webdriver.chrome.driver", FrameworkConstants.getChromedriverpath());
+		//	System.setProperty("webdriver.chrome.driver", FrameworkConstants.getChromedriverpath());
+			WebDriverManager.chromedriver().setup();
 			ChromeOptions options=new ChromeOptions();
 			options.addArguments("--disable-notifications");
 			DriverManager.setDriver(new ChromeDriver(options));

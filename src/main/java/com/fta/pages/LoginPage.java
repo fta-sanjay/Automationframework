@@ -1,10 +1,8 @@
 package com.fta.pages;
 
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-
 import com.fta.enums.WaitStrategy;
+import org.openqa.selenium.By;
 import com.google.common.util.concurrent.Uninterruptibles;
 
 public final class LoginPage extends BasePage{
@@ -21,25 +19,25 @@ public final class LoginPage extends BasePage{
 	
 	public HomePage Login(String username,String password)
 	{
-		click(linkLogin,WaitStrategy.PRESENCE);
+		click(linkLogin, WaitStrategy.PRESENCE);
 		click(buttonEmail,WaitStrategy.PRESENCE);
-		sendKeys(textboxEmail, username);
-		
+		sendKeys(textboxEmail, username,WaitStrategy.PRESENCE);
+
 		Uninterruptibles.sleepUninterruptibly(3,TimeUnit.SECONDS);
-		
-		sendKeys(textboxPassword, password);
-		
+
+		sendKeys(textboxPassword, password,WaitStrategy.PRESENCE);
+
 		Uninterruptibles.sleepUninterruptibly(3,TimeUnit.SECONDS);
 		click(buttonLogin,WaitStrategy.PRESENCE);
 
 		Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
-		
+
 		click(buttonAccount,WaitStrategy.PRESENCE);
-		
+
 	//	return DriverManager.getDriver().findElement(accountname_link).getText();
 		return new HomePage();
-		
-		
+
+
 	}
 
 }

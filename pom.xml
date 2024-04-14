@@ -5,6 +5,32 @@
 	<groupId>org.fta</groupId>
 	<artifactId>Automationframework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<plugins>
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+
+				<configuration>
+					<forkCount>0</forkCount>
+
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+
+
+			</plugin>
+		</plugins>
+	</build>
+	<properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<maven.compiler.source>1.8</maven.compiler.source>
+	<maven.compiler.target>1.8</maven.compiler.target>
+</properties>
 	<dependencies>
 
 		<dependency>
@@ -13,18 +39,133 @@
 			<version>3.141.59</version>
 		</dependency>
 
-	<!-- 	<dependency>
+
+				<dependency>
+					<groupId>org.testng</groupId>
+					<artifactId>testng</artifactId>
+					<version>7.9.0</version>
+				</dependency>
+
+		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>4.4.3</version>
+			<version>5.8.0</version>
 		</dependency>
- -->
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
-			<scope>test</scope>
-		</dependency>
+
+
+
+				<dependency>
+					<groupId>com.aventstack</groupId>
+					<artifactId>extentreports</artifactId>
+					<version>5.0.5</version>
+				</dependency>
+
+				<dependency>
+					<groupId>com.fasterxml.jackson.core</groupId>
+					<artifactId>jackson-databind</artifactId>
+					<version>2.10.3</version>
+				</dependency>
+				<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+				<dependency>
+					<groupId>com.fasterxml.jackson.core</groupId>
+					<artifactId>jackson-core</artifactId>
+					<version>2.10.2</version>
+				</dependency>
+
+
+				<dependency>
+					<groupId>org.seleniumhq.selenium</groupId>
+					<artifactId>selenium-java</artifactId>
+					<version>4.19.1</version>
+				</dependency>
+
+				<dependency>
+					<groupId>org.apache.commons</groupId>
+					<artifactId>commons-lang3</artifactId>
+					<version>3.9</version>
+				</dependency>
+
+				<dependency>
+					<groupId>org.assertj</groupId>
+					<artifactId>assertj-core</artifactId>
+					<version>3.18.1</version>
+					<scope>test</scope>
+				</dependency>
+
+				<!-- https://mvnrepository.com/artifact/org.assertj/assertj-joda-time -->
+				<dependency>
+					<groupId>org.assertj</groupId>
+					<artifactId>assertj-joda-time</artifactId>
+					<version>2.2.0</version>
+					<scope>test</scope>
+				</dependency>
+
+				<!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+				<dependency>
+					<groupId>joda-time</groupId>
+					<artifactId>joda-time</artifactId>
+					<version>2.10.8</version>
+				</dependency>
+
+
+				<dependency>
+					<groupId>org.apache.directory.studio</groupId>
+					<artifactId>org.apache.commons.io</artifactId>
+					<version>2.4</version>
+				</dependency>
+
+				<dependency>
+					<groupId>org.apache.poi</groupId>
+					<artifactId>poi-ooxml</artifactId>
+					<version>3.9</version>
+				</dependency>
+				<dependency>
+					<groupId>org.apache.poi</groupId>
+					<artifactId>poi-ooxml-schemas</artifactId>
+					<version>3.9</version>
+				</dependency>
+				<dependency>
+					<groupId>org.apache.poi</groupId>
+					<artifactId>poi-scratchpad</artifactId>
+					<version>3.9</version>
+				</dependency>
+
+				<dependency>
+					<groupId>org.apache.poi</groupId>
+					<artifactId>poi</artifactId>
+					<version>3.9</version>
+				</dependency>
+
+				<dependency>
+					<groupId>org.apache.poi</groupId>
+					<artifactId>poi-scratchpad</artifactId>
+					<version>3.9</version>
+				</dependency>
+				<dependency>
+					<groupId>org.apache.poi</groupId>
+					<artifactId>ooxml-schemas</artifactId>
+					<version>1.1</version>
+				</dependency>
+
+				<dependency>
+					<groupId>org.apache.poi</groupId>
+					<artifactId>openxml4j</artifactId>
+					<version>1.0-beta</version>
+				</dependency>
+
+				<dependency>
+					<groupId>org.apache.commons</groupId>
+					<artifactId>commons-email</artifactId>
+					<version>1.5</version>
+				</dependency>
+
+				<dependency>
+					<groupId>io.rest-assured</groupId>
+					<artifactId>rest-assured</artifactId>
+					<version>4.3.3</version>
+				</dependency>
+
+
 
 	</dependencies>
 

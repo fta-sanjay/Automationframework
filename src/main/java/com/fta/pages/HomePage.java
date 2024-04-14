@@ -1,14 +1,12 @@
 package com.fta.pages;
 
-import java.util.ArrayList;
 import java.util.List;
-
+import com.fta.enums.WaitStrategy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
 import com.fta.driver.DriverManager;
-import com.fta.enums.WaitStrategy;
+
 
 public final class HomePage extends BasePage{
 
@@ -19,7 +17,7 @@ public final class HomePage extends BasePage{
 
 	public HomePage logout()
 	{
-		click(buttonAccount,WaitStrategy.PRESENCE);
+		click(buttonAccount, WaitStrategy.PRESENCE);
 		click(buttonLogout,WaitStrategy.PRESENCE);
 		return this;
 	}
@@ -45,6 +43,6 @@ public final class HomePage extends BasePage{
 			e.click();
 			System.out.println(DriverManager.getDriver().getTitle());
 		}
-//		return DriverManager.getDriver().getTitle();
+		//return DriverManager.getDriver().getTitle();
 	}
 }

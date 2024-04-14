@@ -11,8 +11,6 @@ public class BaseTest {
 	
 	protected BaseTest(){}
 
-
-
 	@BeforeMethod
 	public void setup()
 	{
