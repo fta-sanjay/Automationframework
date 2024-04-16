@@ -16,4 +16,6 @@ To run tests, run the following command
   Execute testng.xml file
 ```
 
+[index.html](https://github.com/fta-sanjay/Automationframework/index.html)
+
   
