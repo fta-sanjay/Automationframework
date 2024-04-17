@@ -27,7 +27,7 @@ public final class HomePage extends BasePage{
 	}
 	
 	private final By linkMenu=By.xpath("//*[@id='testMenuSelect-shop-men']/span/span");
-	public void getProductPage()
+	public String getProductPage()
 	{
 		try {
 			Thread.sleep(5000);
@@ -43,6 +43,6 @@ public final class HomePage extends BasePage{
 			e.click();
 			System.out.println(DriverManager.getDriver().getTitle());
 		}
-		//return DriverManager.getDriver().getTitle();
+		return DriverManager.getDriver().getTitle();
 	}
 }
