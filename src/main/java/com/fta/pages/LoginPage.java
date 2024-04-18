@@ -3,6 +3,7 @@ package com.fta.pages;
 import java.util.concurrent.TimeUnit;
 import com.fta.enums.WaitStrategy;
 import com.fta.utils.ExtentReport;
+import com.fta.utils.GetScreenshot;
 import org.openqa.selenium.By;
 import com.google.common.util.concurrent.Uninterruptibles;
 
@@ -34,7 +35,6 @@ public final class LoginPage extends BasePage{
 		click(buttonLogin,WaitStrategy.PRESENCE);
 
 		Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
-
 		click(buttonAccount,WaitStrategy.PRESENCE);
 
 	//	return DriverManager.getDriver().findElement(accountname_link).getText();

@@ -7,9 +7,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public final class dataproviderwithexcel {
+public final class DataProviderWithExcel {
 
-    private dataproviderwithexcel(){};
+    private DataProviderWithExcel(){};
     @DataProvider
     public static Object[][] getdatafromexcel()
     {
