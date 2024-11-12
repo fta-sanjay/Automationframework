@@ -26,6 +26,7 @@ public final class LoginpageTest extends BaseTest{
 //		Assert.assertEquals(title, "Online Shopping for Men, Women Clothing & Accessories at Bewakoof");
 //		Assert.assertEquals(accountname, "Hi, sanjay", "Login has not done completly");
 // new line added by SDET 1
+//new line SDET 2
 
 	}
 

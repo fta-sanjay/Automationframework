@@ -19,5 +19,6 @@ public final class HomepageTest extends BaseTest{
 		Assert.assertTrue(title.toLowerCase().contains("bewakoof"));
 
 		Assert.assertEquals(title, "Online Shopping for Men, Women Clothing & Accessories at Bewakoof");
+	    //SDET 2
 	}
 }
